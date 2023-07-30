@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Custom styles for specific elements */
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Primary button */
+.button-primary {
+  background-color: #007bff;
+}
+
+/* Secondary button */
+.button-secondary {
+  background-color: #6c757d;
+}
+
+/* Link button */
+.button-link {
+  background-color: transparent;
+  color: #007bff;
+}
+
+/* Form input fields */
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Main container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  background-color: #141414;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Movie cards */
+.movie-card {
+  width: 200px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  overflow: hidden;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.movie-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.movie-card:hover .overlay {
+  opacity: 1;
+}
+
+.movie-card .movie-title {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Movie list */
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Footer */
+.footer {
+  background-color: #141414;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .movie-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
